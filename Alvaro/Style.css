@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.subtitulo{
+    text-align: center;
+    padding-top: 50px;
+}
+
+.titulo_img{
+    text-shadow: 2px 2px 3px #151515;
+}
+
+.hero {
+    background-image: url('Casa3.jpg');
+    background-size:contain;
+    background-attachment: fixed;
+    color: #fff;
+    text-align: center;
+    text-shadow: #333;
+    padding: 240px 0px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.casas {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    padding: 50px 0;
+}
+
+.casa {
+    width: 350px;
+    margin-bottom: 40px;
+}
+
+.casa img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
