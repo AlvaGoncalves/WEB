@@ -19,12 +19,55 @@
         </nav>
     </header>
 
-    <section class="DragnDrop">
+    <body>
 
-
-    </section>
+        <h2>Publica tu casa en venta</h2>
+        
+        <form id="house_form">
+          <label for="description">Descripción:</label><br>
+          <textarea id="description" name="description" rows="4" cols="50"></textarea><br>
+          <label for="images">Imágenes:</label><br>
+          <div id="drop_zone" style="width:200px; height:100px; padding:10px; border:1px solid #aaaaaa;">
+            Arrastra tus imágenes aquí
+          </div>
+          <input type="submit" value="Publicar">
+        </form>
+        
+        <script>
+        // Función para manejar el evento de arrastrar y soltar
+        function handleFileSelect(evt) {
+          evt.stopPropagation();
+          evt.preventDefault();
+        
+          var files = evt.dataTransfer.files; // Lista de archivos arrastrados
+        
+          for (var i = 0, f; f = files[i]; i++) {
+            // Leer el archivo aquí. Por ejemplo, puedes enviarlo a un servidor
+            console.log(f);
+          }
+        }
+        
+        // Función para manejar los eventos de arrastrar sobre y arrastrar fuera
+        function handleDragOver(evt) {
+          evt.stopPropagation();
+          evt.preventDefault();
+          evt.dataTransfer.dropEffect = 'copy'; // Visualmente indica que se van a copiar los archivos
+        }
+        
+        // Obtener el elemento de la zona de arrastre
+        var dropZone = document.getElementById('drop_zone');
+        
+        // Agregar los listeners de los eventos
+        dropZone.addEventListener('dragover', handleDragOver, false);
+        dropZone.addEventListener('drop', handleFileSelect, false);
+        </script>
+        
+        </body>
     
     <footer>
+        <a href="https://instagram.com/alvagoncalves27"><img src="instagram.png" class="logo"></a>
+        <a href="https://facebook.com/AlvaGoncalves"><img src="facebook.png" class="logo"></a>
+        <a href="https://whatsapp.com/2215571928"><img src="whatsapp.png" class="logo"></a>
         <p>&copy; 2024 Venta de Casas. Todos los derechos reservados.</p>
     </footer>
     <script src="./DragnDrop.js"></script>
