@@ -80,3 +80,14 @@ footer {
     text-align: center;
     padding: 20px 0;
 }
+
+.logo{
+    width: 1cm;
+    height: 1cm;
+}
+
+#drop_zone {
+    border: 5px solid blue;
+    width: 200px;
+    height: 100px;
+}
