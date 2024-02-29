@@ -18,21 +18,28 @@
             </ul>
         </nav>
     </header>
-
-    <body>
-
-        <h2>Publica tu casa en venta</h2>
-        
-        <form id="house_form">
-          <label for="description">Descripción:</label><br>
-          <textarea id="description" name="description" rows="4" cols="50"></textarea><br>
-          <label for="images">Imágenes:</label><br>
-          <div id="drop_zone" style="width:200px; height:100px; padding:10px; border:1px solid #aaaaaa;">
-            Arrastra tus imágenes aquí
-          </div>
-          <input type="submit" value="Publicar">
-        </form>
-        
+    
+  <div class="mid">
+  <br>
+  <div class="container">
+      <h1 class="form_title">Complete los datos de su propiedad</h1>
+      <form action="process_form.php" method="post">
+          <label for="property_name">Property Name:</label>
+          <input type="text" id="property_name" name="property_name" required>
+          
+          <label for="property_description">Property Description:</label>
+          <textarea id="property_description" name="property_description" rows="4" required></textarea>
+          
+          <label for="property_price">Price (USD):</label>
+          <input type="text" id="property_price" name="property_price" required>
+          
+          <label for="contact_email">Contact Email:</label>
+          <input type="text" id="contact_email" name="contact_email" required>
+          
+          <input type="submit" value="Submit Property">
+      </form>
+      <br>
+  </div>
         <script>
         // Función para manejar el evento de arrastrar y soltar
         function handleFileSelect(evt) {
@@ -61,8 +68,8 @@
         dropZone.addEventListener('dragover', handleDragOver, false);
         dropZone.addEventListener('drop', handleFileSelect, false);
         </script>
-        
-        </body>
+   </div>    
+      
     
     <footer>
         <a href="https://instagram.com/alvagoncalves27"><img src="instagram.png" class="logo"></a>
