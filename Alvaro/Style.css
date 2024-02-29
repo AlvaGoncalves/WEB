@@ -39,12 +39,14 @@ nav ul li a {
 
 .hero {
     background-image: url('Casa3.jpg');
-    background-size:contain;
+    background-size:cover;
+    aspect-ratio: auto;
     background-attachment: fixed;
     color: #fff;
     text-align: center;
     text-shadow: #333;
     padding: 240px 0px;
+    padding-bottom: 18%;
 }
 
 .btn {
@@ -86,8 +88,63 @@ footer {
     height: 1cm;
 }
 
+/*Publicar.html*/
+
 #drop_zone {
     border: 5px solid blue;
     width: 200px;
     height: 100px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+}
+
+/*Publicar.html*/
+
+.mid{
+    background-image: url(casa6.jpg);
+    background-size: cover;
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #333;
+    background-position: center;
+    opacity: 70%;
+    border-radius: 10px;
+}
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.form_title{
+    color: #fff;
+}
+input[type="text"],
+textarea {
+    width: 97%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #333;
+    border-radius: 8px;
+}
+input[type="submit"] {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+input[type="submit"]:hover {
+    background-color: #555;
 }
